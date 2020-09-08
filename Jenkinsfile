@@ -4,7 +4,7 @@ pipeline {
         stage('Build'){
             steps {
                 sh 'mvn clean package'
-                sh 'docker build . -t tomcatwebapp:1.0}'
+                sh 'docker build . -t tomcatwebapp:version1.0}'
             }
             post {
                 success {
